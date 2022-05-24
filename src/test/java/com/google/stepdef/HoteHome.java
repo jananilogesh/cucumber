@@ -15,7 +15,6 @@ public class HoteHome extends Baseclass {
 		//iwait(10);
 	//dropdown(hp.getLoc(), 3);
 	    
-	}
 
 	@When("select the hotel")
 	public void select_the_hotel() {
