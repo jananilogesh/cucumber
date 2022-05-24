@@ -48,12 +48,6 @@
     <artifactId>poi-ooxml</artifactId>
     <version>5.2.2</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/com.oracle.java/jre -->
-<dependency>
-    <groupId>com.oracle.java</groupId>
-    <artifactId>jre</artifactId>
-    <version>1.8.0_131</version>
-</dependency>
   
     </dependencies>
 </project>

@@ -3,7 +3,11 @@ package com.google.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -43,6 +48,15 @@ public void send(WebElement element, String value ) {
 	element.clear();
 	element.sendKeys(value);
 }
+public void date( ) {
+	Date thisdate = new Date();
+	SimpleDateFormat dateform = new SimpleDateFormat("MM/dd/YY");
+	System.out.println(dateform.format(thisdate));
+	
+}
+	
+
+
 public void click(WebElement element) {
 	element.click();
 }
@@ -58,7 +72,13 @@ public void screenshot(String path) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+} 
+public void dropdown(WebElement element,int value)
+{
+	Select sc=new Select(element);
+	sc.selectByIndex(value);
 }
+
 public void closebrower() {
 	driver.close();}
 

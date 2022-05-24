@@ -6,7 +6,8 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src\\test\\resources\\Features\\loginpage.feature",glue = "com\\google\\stepdef",monochrome=true)
+@CucumberOptions(features="src\\test\\resources\\Features\\homepage.feature",
+glue = "com\\google\\stepdef",monochrome=true,dryRun=false)
 
 public class TestRunner {
 
